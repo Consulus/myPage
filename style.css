@@ -177,9 +177,9 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     transition: all .5 ease-out;
-    width: 400px;
-    height: 400px;
-    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
 }
 
 .slide-content{
@@ -189,13 +189,13 @@ li {
     align-items: center;
     text-align: center;
 }
-.slide1 .slide-content a{
+.slide.slide1 .slide-content{
     font-size: 5rem;
-    background-image: url('../img/pizza.jpg');
+    background-image: url('pizza.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     cursor: pointer;
 }
 .arrow{
@@ -211,7 +211,7 @@ li {
 #arrow-left{
     border-width: 30px 40px 30px 0;
     border-color: transparent #063146 transparent transparent;
-    left: 0;
+    left: 0px;
     margin-left: 1px;
 }
 #arrow-right{
@@ -225,4 +225,14 @@ li {
 }
 #arrow-right:hover {
     border-color: transparent transparent transparent #ff0;
+}
+#contacts p{
+    font-weight: bold;
+}
+@media(max-width: 930px){
+    .slide{
+        width: 150px;
+        height: 150px;
+    }
+    
 }
